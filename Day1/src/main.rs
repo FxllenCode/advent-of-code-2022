@@ -13,6 +13,7 @@ fn main() -> io::Result<()> {
         let mut safe_line = String::new();
         match line {
             Ok(line) => safe_line = line,
+
             Err(e) => panic!("{e}"),
         }
         if safe_line != "" {
